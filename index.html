@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>tutorial_project</title>
+<title>index</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -19231,14 +19231,129 @@ z
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="images/plate_zones.png" alt="title"></p>
-<p>Taken from baseballsavant.mlb.com</p>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.image</span> <span class="k">as</span> <span class="nn">mpimg</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">mpimg</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">&#39;images/plate_zones.png&#39;</span><span class="p">)</span>
+<span class="n">imgplot</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">([])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">([])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Taken from baseballsavant.mlb.com&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+
+<div class="output_svg output_subarea ">
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with matplotlib (https://matplotlib.org/) -->
+<svg height="235.34pt" version="1.1" viewBox="0 0 231.104156 235.34" width="231.104156pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <metadata>
+  <rdf:RDF xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2020-12-21T07:31:54.317779</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.3.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linecap:butt;stroke-linejoin:round;}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 235.34 
+L 231.104156 235.34 
+L 231.104156 0 
+L 0 0 
+z
+" style="fill:none;"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 10.7 224.64 
+L 223.904156 224.64 
+L 223.904156 7.2 
+L 10.7 7.2 
+z
+" style="fill:#ffffff;"/>
+   </g>
+   <g clip-path="url(#p301849f86f)">
+    <image height="218" id="image7d2208b289" transform="scale(1 -1)translate(0 -218)" width="214" x="10.7" xlink:href="data:image/png;base64,
+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" y="-6.64"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_3">
+    <path d="M 10.7 224.64 
+L 10.7 7.2 
+" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.8;"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 223.904156 224.64 
+L 223.904156 7.2 
+" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.8;"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 10.7 224.64 
+L 223.904156 224.64 
+" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.8;"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 10.7 7.2 
+L 223.904156 7.2 
+" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.8;"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p301849f86f">
+   <rect height="217.44" width="213.204156" x="10.7" y="7.2"/>
+  </clipPath>
+ </defs>
+</svg>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Taken from baseballsavant.mlb.com
+</pre>
+</div>
+</div>
 
 </div>
 </div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -21239,6 +21354,7 @@ Number of 4SF thrown: 2609
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Instead of trying to do multinomial logistic regression due to having 4 classifications (single, double, triple, home_run), we will simplify the multinomial logistic regression into 4 binary logistic regression problems, each of which will determine whether a hit is a certain event or not for each event (i.e. single/other, double/other, etc.) Additonally, I drop some features when fitting the logit model due to internal linear algebra errors that occur as well as dummy categorical variables not being significant.</p>
+<p>(Pitch name dummy variables cause the overall resulting matrix. after concatenation back to the original matrix to have a determinant of 0, which means it doesn't have an inverse, but it needs one in order for model.fit() to work.)</p>
 
 </div>
 </div>
@@ -21250,17 +21366,6 @@ Number of 4SF thrown: 2609
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">statsmodels.formula.api</span> <span class="kn">import</span> <span class="n">logit</span>
 <span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">reduce</span>
-
-<span class="c1"># Data Cleaning: </span>
-<span class="c1"># </span>
-<span class="c1"># ,  separate independent/dependent</span>
-<span class="c1"># variables, dummify pitch_name, concat back together, add constant column. I am making an assumption that stance</span>
-<span class="c1"># of batter/pitcher is not significant, hence I am dropping them.</span>
-
-
-<span class="c1"># Pitch name dummy variables cause the overall resulting matrix</span>
-<span class="c1"># after concatenation back to the original matrix to have a determinant</span>
-<span class="c1"># of 0, which means it doesn&#39;t have an inverse (but it needs one to fit the model).</span>
 
 <span class="c1"># Drop observations with NA</span>
 <span class="n">remaining_swings</span> <span class="o">=</span> <span class="n">swings</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
@@ -21275,7 +21380,7 @@ Number of 4SF thrown: 2609
 <span class="c1"># Concat dummies back</span>
 <span class="n">remaining_swings</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">remaining_swings</span><span class="p">,</span> <span class="n">zone_dummies</span><span class="p">,</span> <span class="n">lsa_dummies</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
-<span class="c1"># Drop features we don&#39;t want to fit, includin original categorical variables.</span>
+<span class="c1"># Drop features we don&#39;t want to fit, including original categorical variables.</span>
 <span class="n">remaining_swings</span> <span class="o">=</span> <span class="n">remaining_swings</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;player_name&#39;</span><span class="p">,</span> <span class="s1">&#39;stand&#39;</span><span class="p">,</span> <span class="s1">&#39;p_throws&#39;</span><span class="p">,</span> <span class="s1">&#39;zone&#39;</span><span class="p">,</span> <span class="s1">&#39;launch_speed_angle&#39;</span><span class="p">,</span> <span class="s1">&#39;pitch_name&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="n">features</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">remaining_swings</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
